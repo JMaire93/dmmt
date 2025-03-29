@@ -1,0 +1,186 @@
+/* body/header/footer */
+body {
+    background-color: #3f3f3f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header,
+footer {
+    background-color: #dcae96;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+header nav,
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+/* global */
+* {
+    box-sizing: border-box;
+}
+
+h2,
+.brands>*,
+.hairdresser .cards img,
+.hairstyle .cards img {
+    border-radius: 25px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 85%;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #b4deb8;
+    /* margin: 50px 0px; */
+}
+
+h2 {
+    background-color: #dcae96;
+    padding: 8px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.pimp {
+    border-radius: 1em;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+/* searchList */
+.zoom1:hover {
+    transform: scale(1.08);
+}
+/* map */
+.zoom2:hover {
+    transform: scale(1.05);
+}
+@media screen and (max-width: 900px) {
+    .zoom1:hover {
+        transform: scale(1.05);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 0 10%;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        padding: 0;
+    }
+}
+
+
+/* brands */
+.brands {
+    display: grid;
+    grid-template:
+        "title c c" 1fr
+        "map map searchBar" 1fr
+        "map map searchList" 8fr / 2fr 1fr 2fr;
+    grid-gap: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .brands {
+        grid-template:
+            "title" 1fr
+            "map" 6fr
+            "searchBar" 1fr
+            "searchList" 4fr / 1fr;
+    }
+}
+
+.brands .title {
+    grid-area: title;
+}
+
+.brands .map {
+    grid-area: map;
+    background-color: skyblue;
+}
+
+.brands .searchBar {
+    grid-area: searchBar;
+    background-color: #b4deb8;
+    padding: 2%;
+}
+
+.brands .searchList {
+    grid-area: searchList;
+    background-color: #b4deb8;
+}
+
+
+/* hairdresser */
+.hairdresser,
+.hairstyle {
+    display: grid;
+    grid-template:
+        "title title c c c" 1fr
+        "cards cards cards cards cards" 4fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .hairdresser {
+        grid-template:
+            "title" 1fr
+            "cards" 11fr / 1fr;
+    }
+}
+
+.hairdresser .tithairstylele,
+.hairstyle .title {
+    grid-area: title;
+}
+
+.hairdresser .cards,
+.hairstyle .cards {
+    grid-area: cards;
+    display: flex;
+    align-items: center;
+    /* Enlve le stretch */
+    justify-content: center;
+    gap: 1em;
+}
+
+.hairdresser img,
+.hairstyle img {
+    /* grid-area: card1; */
+    border-radius: 1em;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.hairdresser img:hover,
+.hairstyle img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+    .hairdresser .cards {
+        flex-wrap: wrap;
+    }
+
+    .hairdresser img {
+        width: 48%;
+    }
+}
