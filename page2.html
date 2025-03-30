@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page2</title>
     <link rel="stylesheet" href="src/page2.css">
-<!-- 
+    
     <link rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script> -->
+    crossorigin=""></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+        </style>
 </head>
 
 <body>
@@ -32,29 +35,39 @@
     <main>
         <!-- brands -->
         <div class="brands">
-            <h2 class="title pimp zoom1">Choisissez votre enseigne</h2>
-    <div class="map pimp zoom2" style="width: 100%; height: 100%;" id="map"></div>
-            <div class="searchBar pimp zoom1">searchBar</div>
-            <div class="searchList pimp zoom1">searchList</div>
+            <div class="layer1">
+                <h2 class="title">Choisissez votre enseigne</h2>
+            </div>
+            <div class="layer2">
+                <div class="map" style="width: 100%; height: 100%;" id="map"></div>
+                <div class="searchBar">searchBar</div>
+                <div class="searchList">searchList</div>
+            </div>
         </div>
+
         <hr>
 
         <!-- hairdresser -->
         <div class="hairdresser">
-            <h2 class="title">Choisissez votre coiffeur</h2>
-            <div class="cards">
+            <div class="layer1">
+                <h2 class="title">Choisissez votre coiffeur</h2>
+            </div>
+            <div class="layer2 cards">
                 <img src="src/img/hairdresser/1.png" alt="">
                 <img src="src/img/hairdresser/2.png" alt="">
                 <img src="src/img/hairdresser/3.png" alt="">
                 <img src="src/img/hairdresser/4.png" alt="">
             </div>
         </div>
+
         <hr>
 
         <!-- hairstyle -->
         <div class="hairstyle">
-            <h2 class="title">Choisissez votre coiffure</h2>
-            <div class="cards">
+            <div class="layer1">
+                <h2 class="title">Choisissez votre coiffure</h2>
+            </div>
+            <div class="layer2 cards">
                 <img src="src/img/hairstyle/1.png" alt="">
                 <img src="src/img/hairstyle/2.png" alt="">
                 <img src="src/img/hairstyle/3.png" alt="">
@@ -66,10 +79,13 @@
                 <img src="src/img/hairstyle/9.png" alt="">
                 <img src="src/img/hairstyle/10.png" alt="">
                 <img src="src/img/hairstyle/11.png" alt="">
-                <img class="pimp" src="src/img/hairstyle/12.png" alt="">
+                <img src="src/img/hairstyle/12.png" alt="">
             </div>
         </div>
-        <hr>
+
+        <div class="next">
+            <h2>C'est parti mon kiki</h2>
+        </div>
     </main>
 
     <!-- Footer -->
