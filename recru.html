@@ -23,7 +23,7 @@
     <header class="d-flex flex-column align-items-center justify-content-center ">
         <div id="carte" class="d-flex flex-column flex-wrap align-items-center justify-content-center col-6 gap-3 m-2 p-2 ">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44214.87365709621!2d-1.2176734362669839!3d46.16210329913977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48015383c9253d75%3A0x405d39260ee9640!2sLa%20Rochelle!5e0!3m2!1sfr!2sfr!4v1742897391971!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-12"></iframe>
-            <div>
+            <div class="d-flex flex-row flex-wrap align-items-center justify-content-center col-12 gap-3 m-2 p-2 ">
                 <label for="search">Ville</label>
                 <input type="search">
                 <label for="number">Km</label>
@@ -33,22 +33,29 @@
         </div>
     </header>
 
-        <div id="fiche candi">
-            <form action="fiche">
-                <label for="name">Nom</label>
-                <input type="name">
-                <label for="surname">Prénom</label>
-                <input type="surname">
-                <label for="mail">Mail</label>
-                <input type="mail">
-                <label for="phone">Téléphone</label>
-                <input type="phone">
-                <label for="cv">CV</label>
-                <input type="file">
-                <label for="lettre de motivation">Lettre de motivation</label>
-                <input type="file">
+        <div id="fiche candi" class="bg-danger d-flex flex-row flex-nowrap col-12 p-2 ">
+            <h1>Candidature Spontanée</h1>
+            <form action="fiche" class="d-flex flex-row flex-wrap align-items-center justify-content-center col-12 gap-3 p-2 ">
+                <div class="d-flex flex-column justify-content-center col-4 gap-3 m-2 p-2 ">
+                    <label for="name">Nom</label>
+                    <input type="name">
+                    <label for="surname">Prénom</label>
+                    <input type="surname">
+                    <label for="mail">Mail</label>
+                    <input type="mail">
+                    <label for="phone">Téléphone</label>
+                    <input type="phone">  
+                </div>
+                <div class="d-flex flex-column justify-content-center col-4 gap-3 p-2 ">
+                    <label for="cv">CV</label>
+                    <input type="file">
+                    <label for="lettre de motivation">Lettre de motivation</label>
+                    <input type="file">
+                    <label for="message">message</label>
+                    <textarea name="message" id=""></textarea>
+                </div>
                 
-                <div>
+                <div class="d-flex flex-column align-items-center justify-content-center col-4 gap-3 m-2 p-2 ">
                     <input type="submit" value="Envoyer">
                 </div>
             </form>
