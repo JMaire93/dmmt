@@ -40,50 +40,61 @@
         </div>
     </header>
 
-        <div id="fiche candi" class="bg-danger d-flex flex-row flex-nowrap col-12 p-2 ">
-            <h1>Candidature Spontanée</h1>
-            <form action="fiche" class="d-flex flex-row flex-wrap align-items-center justify-content-center col-12 gap-3 p-2 ">
-                <div class="d-flex flex-column justify-content-center col-4 gap-3 m-2 p-2 ">
-                    <label for="name">Nom</label>
-                    <input type="name">
-                    <label for="surname">Prénom</label>
-                    <input type="surname">
-                    <label for="mail">Mail</label>
-                    <input type="mail">
-                    <label for="phone">Téléphone</label>
-                    <input type="phone">  
+        <div id="fiche candi" class="bg-danger m-auto col-11 p-5 ">
+            <form action="fiche" class="d-flex flex-column flex-wrap align-items-center justify-content-center col-12 gap-3 p-2 ">
+                <h1>Candidature Spontanée</h1>
+                <hr width=100%>
+
+                <!-- *Mettre en ligne -->
+                <div class="d-flex flex-row align-items-center justify-content-center gap-3 p-2 col-12">
+
+                    <!-- *Colonne de Gauche -->
+                    <div class="d-flex flex-column justify-content-center col-5 gap-3 m-2 p-2 me-5">
+                        <label for="name">Nom</label>
+                        <input type="name">
+                        <label for="surname">Prénom</label>
+                        <input type="surname">
+                        <label for="mail">Mail</label>
+                        <input type="mail">
+                        <label for="phone">Téléphone</label>
+                        <input type="phone">  
+                    </div>
+
+                    <!-- *Colonne de Droite -->
+                    <div class="d-flex flex-column justify-content-center col-5 gap-3 p-2 ">
+                        <label for="cv">CV</label>
+                        <input type="file">
+                        <label for="lettre de motivation">Lettre de motivation</label>
+                        <input type="file">
+                        <label for="message">message</label>
+                        <textarea name="message" id=""></textarea>
+                    </div>
                 </div>
-                <div class="d-flex flex-column justify-content-center col-4 gap-3 p-2 ">
-                    <label for="cv">CV</label>
-                    <input type="file">
-                    <label for="lettre de motivation">Lettre de motivation</label>
-                    <input type="file">
-                    <label for="message">message</label>
-                    <textarea name="message" id=""></textarea>
-                </div>
-                
+
+                <!-- *Bouton pour envoyer -->
                 <div class="d-flex flex-column align-items-center justify-content-center col-4 gap-3 m-2 p-2 ">
                     <input type="submit" value="Envoyer">
                 </div>
             </form>
         </div>
     
-        <footer>
-            <div>
-                <a href=""><img src="/img/x-ico.png" alt="X"></a>
-                <a href=""><img src="/img/fb-ico.png" alt="facebook"></a>
-                <a href=""><img src="/img/insta-ico.png" alt="instagram"></a>
-                <a href=""><img src="/img/pint-ico.png" alt="pinterest"></a>
+        <footer class="bg-warning flex-row mt-5">
+            <div class="d-flex flex-row flex-nowrap justify-content-around align-items-center">
+                <div>
+                    <a href=""><img src="/img/x-ico.png" alt="X" style="width: 40px;"></a>
+                    <a href=""><img src="/img/fb-ico.png" alt="facebook" style="width: 40px;"></a>
+                    <a href=""><img src="/img/insta-ico.png" alt="instagram" style="width: 40px;"></a>
+                    <a href=""><img src="/img/pint-ico.png" alt="pinterest" style="width: 40px;"></a>
+                </div>
+                <div class="d-flex flex-row justify-content-center align-items-center text-center">
+                    <!-- <img src="/img/copy-ico.png" alt="copyright" style="width: 30px;"> -->
+                    <p>© Dé'Mél'Mé'Tiff by Afec.</p>
+                </div>
+                <div>
+                    <a href="">Conditions Générales</a>
+                    <a href="/recru.html">Recrutement</a>
+                </div>
             </div>
-            <div>
-                <img src="/img/copy-ico.png" alt="copyright">
-                <p>Dé'Mél'Mé'Tiff by Afec.</p>
-            </div>
-            <div>
-                <a href="">Conditions Générales</a>
-                <a href="/recru.html">Recrutement</a>
-            </div>
-            
         </footer>
     
 </body>
