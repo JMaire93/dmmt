@@ -1,0 +1,25 @@
+.logo_nav{
+    width: 4.5%;
+  }
+
+  .logo_nav2{
+    height: 30px;
+  }
+
+  .text_nav{
+    text-decoration: none;
+    color: white;
+    font-family:'lancelot';
+    font-size: 24px;
+    font-weight:bolder;
+}
+
+.nav{
+    width: 95%;
+    box-sizing: border-box;
+    background-color:rgb(220, 174, 150) ;
+    margin: 20px auto;
+    border-radius: 70px;
+    height: 80px;
+    padding: 0 30px;
+}
