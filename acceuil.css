@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+  flex: 1;
+}
+
+.fond_salon{
+    width: 100%;
+    background-image: url(img/salon_1.jpg);
+    background-size: cover;
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    position:relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.opacité{
+    opacity: 0.9;
+}
+
+.text_nav{
+    text-decoration: none;
+    color: white;
+    font-family:'lancelot';
+    font-size: 40px;
+    font-weight:bolder;
+}
+
+.nav{
+    width: 95%;
+    box-sizing: border-box;
+    background-color:rgb(220, 174, 150) ;
+    margin: 20px 2.5% ;
+    border-radius: 70px;
+    height: 90px;
+    z-index: 2;
+    
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Blanc avec 50% de transparence */
+    z-index: 1;
+  }
+
+  .contenu {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+  }
+
+  .opacité:hover{
+    opacity: 1;
+  }
+
+  .logo_nav{
+    width: 90px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .logo_nav2{
+    height: 70%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .bouton{
+    width: 200px;
+    height: 200px;
+    font-size: 90px;
+    color:rgb(44, 43, 43);
+    background-color:rgb(180, 222, 184);
+    opacity: 0.65;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+
+  .bouton:hover{
+    width: 220px;
+    height: 220px;
+    opacity: 0.8;
+  }
+
+  .salons{
+    margin-top: 75px;
+    height: 150vh;
+  }
+
+  .photo{
+    height: 99%;
+    width: 89%;
+    border-radius: 10px;
+    opacity: 0.8;
+    
+  }
+
+  .photo:hover{
+    height: 100%;
+    width: 90%;
+    opacity: 1;
+    
+  }
+  
+  .ville{
+    color: white;
+    font-family:'lancelot';
+    font-size: 60px;
+    font-weight:bolder;
+  }
+
+  div.salons {
+    margin-top: 500px;
+    margin-bottom: 100px;
+  }
+
+  .trouver{
+    text-decoration: none;
+    color: white;
+    font-family:'lancelot';
+    font-size: 80px;
+    font-weight:bolder;
+  }
+
+  .presentation {
+    box-sizing: border-box;
+    background-color: rgb(220, 174, 150);
+    margin-top: 700px;
+    margin-bottom: 150px;
+    border-radius: 90px;
+    padding: 30px;
+    color: white;
+    font-family:'lancelot';
+    font-size: 100px;
+    font-weight:bolder;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+  }
+
+  .texte{
+    box-sizing: border-box;
+    background-color: rgb(220, 174, 150);
+    margin-top: 250px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 90px;
+    padding: 30px;
+    color: white;
+    font-family:'lancelot';
+    font-size: 70px;
+    font-weight:bolder;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.8);
+    
+  }
+  
+  .photo_pres{
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border-color: aquamarine;
+    border-width: 3px;
+    border-style:solid;
+    box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+  }
+
+  .footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(220, 174, 150);
+    color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin:0;
+    z-index: 2;
+  }
+
+  .logo_footer{
+    height: 35px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .marque_footer{
+    color: white;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+
+  .liens_footer{
+    color: white;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 30px;
+  }
+
+  .fond_salon_bot{
+    width: 100%;
+    background-image: url(img/salon_1.jpg);
+    background-size: cover;
+    height: 120vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    z-index: 1;
+    opacity: 0.6;
+    position: absolute;
+  }
+
+
+  .fond_bas{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    z-index: 2;
+    margin-top: 500px;
+  }
+
+  .comm{
+    background-color: rgb(180, 222, 184,0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    height: 700px;
+    width: 22%;
+    margin-left: 70px;
+    margin-right: 70px;
+    box-shadow: 20px 20px 10px rgba(0,0,0,0.4);
+  }
+
+  .titre_comm{
+    font-family: 'lancelot';
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .note{
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .date{
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .contenu{
+    font-family: 'lancelot';
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .bouton_comm{
+    width: 150px;
+    height: 150px;
+    font-size: 90px;
+    color:rgb(85, 75, 75);
+    background-color:rgb(220, 174, 150);
+    opacity: 0.65;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+
+  .bouton_comm:hover{
+    width: 170px;
+    height: 170px;
+    opacity: 0.8;
+  }
+
+  .comm:hover{
+    background-color: rgb(180, 222, 184,1);
+  }
